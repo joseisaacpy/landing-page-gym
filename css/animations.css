@@ -1,0 +1,35 @@
+/* animations */
+/* animação de seta */
+@keyframes arrowMove {
+  0% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(10px);
+    opacity: 0.9;
+  }
+}
+/* animação de borda */
+@keyframes borderMove {
+  0% {
+    border-image-source: linear-gradient(to right, var(--cor04), var(--cor03));
+    border-image-slice: 1;
+  }
+  25% {
+    border-image-source: linear-gradient(to top, var(--cor04), var(--cor03));
+    border-image-slice: 1;
+  }
+  50% {
+    border-image-source: linear-gradient(to left, var(--cor04), var(--cor03));
+    border-image-slice: 1;
+  }
+  75% {
+    border-image-source: linear-gradient(to bottom, var(--cor04), var(--cor03));
+    border-image-slice: 1;
+  }
+  100% {
+    border-image-source: linear-gradient(to right, var(--cor04), var(--cor03));
+    border-image-slice: 1;
+  }
+}
